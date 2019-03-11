@@ -3,3 +3,8 @@
   to = "/?redirect=true"
   status = 301 
 
+[[redirects]]
+	from = "/feed/*"
+	to = "https://zofepod.libsyn.com/rss"
+	status = 200 
+	force = true
