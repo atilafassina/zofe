@@ -103,15 +103,6 @@ const Header = ({ siteTitle }) => (
               Spotify
             </ZofeLink>
           </li>
-          <li className="footer-feed-item">
-            <ZofeLink
-              to="https://zofe.com.br/feed/posts.xml"
-              className="footer-feed-link"
-              title="Posts RSS"
-            >
-              Posts RSS
-            </ZofeLink>
-          </li>
         </ListItems>
       </nav>
     </div>

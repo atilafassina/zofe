@@ -1,10 +1,10 @@
 [[redirects]]
   from = "/posts/*"
   to = "/?redirect=true"
-  status = 301 
+  status = 301
 
 [[redirects]]
-	from = "/feed/*"
-	to = "https://zofepod.libsyn.com/rss"
-	status = 200 
-	force = true
+  from = "/feed/*"
+  to = "https://zofepod.libsyn.com/rss"
+  status = 200 
+  force = true
