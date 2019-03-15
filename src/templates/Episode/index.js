@@ -17,7 +17,7 @@ const Episode = props => {
   } = props.data.contentfulEpisode
 
   return (
-    <Layout>
+    <Layout episodeData={props.data.contentfulEpisode} foo="bar">
       <article className="episode u-full-width">
         <header className="episode-header u-full-width">
           <h2 className="episode-title">
@@ -64,6 +64,15 @@ export default Episode
 
 export const pageQuery = graphql`
   query episodeQuery($episodeNumber: Int!) {
+    site {
+      siteMetadata {
+        title
+        summary
+        siteUrl
+        twitter
+      }
+    }
+
     contentfulEpisode(episodeNumber: { eq: $episodeNumber }) {
       title
       slug

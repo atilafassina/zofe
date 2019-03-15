@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(`
         {
-          allContentfulEpisode(limit: 100) {
+          allContentfulEpisode {
             edges {
               node {
                 id
